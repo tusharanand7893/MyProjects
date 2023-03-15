@@ -15,6 +15,7 @@ public class AddTwoNumbers {
         l2.add(2);
         l2.add(4);
         l2.add(5);
+        l2.add(5);
 
         System.out.println(sumOfTwoNumbers(l1,l2));
     }
