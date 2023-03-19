@@ -1,3 +1,5 @@
+package generalProgram;
+
 public class FindDupesCharInString {
 
 
