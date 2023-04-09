@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class RemoveDuplicateFromArray {
     public static void main(String[] args) {
-        int[] A={9, 3, 9, 3, 9, 7, 9};
+        int[] A={9, 3, 9, 3,5, 9, 7, 9,6};
         System.out.println(RemoveDuplicateFromArray.solution(A));
     }
 
@@ -21,6 +21,7 @@ public class RemoveDuplicateFromArray {
                 hs.remove(A[i]);
             }
         }
+        System.out.println(hs);
         for(Integer i:hs){
             a=i;
         } return a;

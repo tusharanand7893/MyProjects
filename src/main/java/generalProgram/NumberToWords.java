@@ -3,7 +3,7 @@ package generalProgram;
 public class NumberToWords {
 
     public static void main(String[] args) {
-        System.out.println(NumberToWords.convert(1));
+        System.out.println(NumberToWords.convert(20));
     }
 
     public static String convert(int num){
@@ -43,16 +43,16 @@ public class NumberToWords {
         String value="";
 
         while(num>0){ //4321
-            if(num>1000){
+            if(num>=1000){
                int thousandDigit=num/1000;//4
                 num=num%1000;//4321
                 value=onesDigit[thousandDigit]+" "+thousands[0];
-            } else if (num>100) { //321
+            } else if (num>=100) { //321
                 int hundredDigit=num/100;//3
                 num=num%100;//21
                 value=value+" "+onesDigit[hundredDigit]+" "+hunderds[0];
             }
-            else if(num>20){ //21
+            else if(num>=20){ //21
                 int tenDigit=num/10; //2
                 num=num%10;//1
                 value=value+" "+tensMultiple[tenDigit];

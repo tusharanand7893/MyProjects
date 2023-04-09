@@ -5,9 +5,10 @@ import java.util.Set;
 
 public class Biinary {
     public static void main(String[] args) {
-
+        int i=19;
+        System.out.println(solution(i));
     }
-    public int solution(int N) {
+    public int solution1(int N) {
         // Implement your solution here
 
         String convertedBinary=Integer.toBinaryString(N);
@@ -26,8 +27,7 @@ public class Biinary {
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-    class Solution {
-        public int solution(int N) {
+    public static int solution(int N) {
             // Implement your solution here
 
             String convertedBinary=Integer.toBinaryString(N);
@@ -54,6 +54,6 @@ public class Biinary {
             }
             return gap;
         }
-    }
+
 
 }

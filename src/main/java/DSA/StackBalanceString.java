@@ -11,7 +11,7 @@ public class StackBalanceString {
 //String str="({}{}([{}]))"; //- true
 //String str="({"; //- false
 //String str="{{}{}{}{}{a}(a)(a)()()[][][][]}"; //-true
-      System.out.println(StackBalanceString.checkIfStringIsBalance("{{}{}{}{}{a}(a)(a)()()[][][][]}"));
+      System.out.println(StackBalanceString.checkIfStringIsBalance(""));
     }
 
 

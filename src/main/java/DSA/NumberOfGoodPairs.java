@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class NumberOfGoodPairs {
 
     public static void main(String[] args) {
-        int[] arr={1,2,3};
+        int[] arr={1,2,3,1};
      HashMap<Integer,ArrayList> hm=NumberOfGoodPairs.findGoodPairs(arr);
         System.out.println("There are "+hm.size()+" good pairs");
         for(ArrayList<Integer> a:hm.values()){
