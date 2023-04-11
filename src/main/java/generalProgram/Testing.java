@@ -9,8 +9,8 @@ import java.net.URL;
 public class Testing {
 
     public static void main(String[] args) throws IOException {
-        URL obj = new URL("https://jsonmock.hackerrank.com/api/moviesdata/search/?Title=maze");
-        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        URL url = new URL("https://jsonmock.hackerrank.com/api/moviesdata/search/?Title=maze");
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
         con.connect();
         System.out.println(con.getInputStream());

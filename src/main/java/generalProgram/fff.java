@@ -26,6 +26,8 @@ that, given an array A of N integers, returns the smallest positive integer (gre
         Copyright 2009–2023 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 */
 public class fff {
+
+
     public int solution(int[] A) {
         // Implement your solution here
         int max=A[0];
@@ -55,10 +57,12 @@ public class fff {
     }
 
     public static void main(String[] args){
-
-        int[] a = {1, 2, 3, 4};
         fff f=new fff();
-        System.out.println(f.solution1(a));
+       /* int[] a = {1, 2, 3, 4};
+
+        System.out.println(f.solution1(a));*/
+
+        f.test();
     }
 
     public int solution1(int[] A){
@@ -76,6 +80,18 @@ public class fff {
             }
         }
         return number;
+    }
+
+    public void test(){
+        AbsClassExample absClassExample= new AbsClassExample(3,5) {
+            @Override
+            public void function() {
+                System.out.println(a+" fucntion abs "+b);
+            }
+        };
+
+        absClassExample.testfunctionabs();
+        absClassExample.function();
     }
 
 

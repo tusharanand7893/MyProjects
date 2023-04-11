@@ -5,7 +5,7 @@ public class array123 {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,6,7,8};
         System.out.println("test1 "+findPeak(arr,7));
-        System.out.println("Test2 "+findPeak2(arr,7));
+        System.out.println("Test2 "+findPeak2(arr));
     }
 
     public  static int findPeak(int arr[], int n){
@@ -26,8 +26,10 @@ public class array123 {
         return ans;
     }
 
-    public static int findPeak2(int arr[],int n){
-        n=n+1;
+    public static int findPeak2(int arr[]){
+
+       int n=arr.length+1;
+
         int sum=(n*(n+1))/2;
         int sumOfArray=0;
         for(int i=0;i<arr.length;i++){

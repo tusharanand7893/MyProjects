@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public class ReversStringWithRecurscion {
     public static void main(String[] args) {
-       // System.out.println(ReversStringWithRecurscion.reverseString("987654321"));
+       System.out.println(ReversStringWithRecurscion.reverseString("987654321"));
        ReversStringWithRecurscion.reverseString(new char[]{'h', 'e', 'l', 'l', 'o'});
     }
 

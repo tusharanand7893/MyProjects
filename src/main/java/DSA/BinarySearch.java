@@ -1,5 +1,6 @@
 package DSA;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -11,6 +12,7 @@ public class BinarySearch {
     }
 
     public static int binarySearch(int[] arr,int elementToSearch){
+        Arrays.sort(arr);
         int left=0;
         int right= arr.length-1;
         int middle=0;
