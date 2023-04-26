@@ -1,6 +1,6 @@
 package interview;
 
-public class Test1 {
+public class Moolya {
 
     public static void main(String[] args) {
 String str="Hello World";

@@ -1,12 +1,15 @@
 package interview;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LongestPalindrome {
 
     public static void main(String[] args) {
       String[]  input={"ram","weds3","rrr","naman","nitin","dskjhksdjhds"};
+
       List<String> al= new ArrayList<>();
       int maxLen=0;
       for(int i=0; i<input.length;i++){
@@ -21,6 +24,8 @@ public class LongestPalindrome {
       }
         System.out.println(al);
 
+        List<String> a=Arrays.stream(input).filter(LongestPalindrome::checkPalindrom).collect(Collectors.toList());
+        System.out.println(a);
 
     }
 

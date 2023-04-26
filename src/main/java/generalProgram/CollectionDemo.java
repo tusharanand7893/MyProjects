@@ -1,9 +1,6 @@
 package generalProgram;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class CollectionDemo {
 
@@ -43,6 +40,10 @@ collectionDemo.mapDemo();
 
         for(String h: hm.values()){
             System.out.println(h);
+        }
+
+        for(Map.Entry<Integer,String> m:hm.entrySet()){
+            System.out.println("Key/Value "+m.getKey()+" "+m.getValue());
         }
 
         

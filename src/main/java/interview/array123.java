@@ -1,11 +1,23 @@
 package interview;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class array123 {
 
     public static void main(String[] args) {
-        int arr[]={1,2,3,4,6,7,8};
-        System.out.println("test1 "+findPeak(arr,7));
-        System.out.println("Test2 "+findPeak2(arr));
+        int[] arr={1,2,3,4,6,7,8};
+       // System.out.println("test1 "+findPeak(arr,7));
+        //System.out.println("Test2 "+findPeak2(arr));
+       // System.out.println(arr);
+        List<Integer> list=Arrays.stream(arr).boxed().collect(Collectors.toList());
+        ArrayList<Integer> al= new ArrayList<>();
+        for(int a:arr){
+            al.add(a);
+        }
+        System.out.println(list);
     }
 
     public  static int findPeak(int arr[], int n){

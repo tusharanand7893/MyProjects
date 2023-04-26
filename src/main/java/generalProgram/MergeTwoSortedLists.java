@@ -26,11 +26,11 @@ public class MergeTwoSortedLists {
                     l.add(list1.get(i));
                 }
                 else if(list1.get(i)>list2.get(j)){
-                    l.add(list1.get(j));
+                    l.add(list2.get(j));
                 }
                 else{
                     l.add(list1.get(j));
-                    l.add(list1.get(i));
+                    l.add(list2.get(i));
                 }
             }
 
