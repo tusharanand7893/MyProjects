@@ -25,12 +25,10 @@ You need to :
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class main{
+public class DataAi {
     static int maxNum(int num){
 
         // task 1: write your code here

@@ -16,6 +16,8 @@ public class test {
 
     public static int solution(int[] X, int[] Y, int W) {
         // Implement your solution here
+
+        AB ab= new AB("test");
         int rollTime=1;
         ArrayList<Integer> a= new ArrayList<>();
         for(int i=0;i<X.length;i++){
