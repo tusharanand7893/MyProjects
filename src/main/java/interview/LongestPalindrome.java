@@ -24,8 +24,8 @@ public class LongestPalindrome {
       }
         System.out.println(al);
 
-        List<String> a=Arrays.stream(input).filter(LongestPalindrome::checkPalindrom).collect(Collectors.toList());
-        System.out.println(a);
+        List<String> a=Arrays.stream(input).filter(LongestPalindrome::checkPalindrom).filter(s -> s.length()>=5).collect(Collectors.toList());
+        System.out.println("stream "+a);
 
     }
 

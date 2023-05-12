@@ -19,7 +19,7 @@ public class Epam {
         String[] str= s.split(" ");
         String result="";
         for(String arr:str){
-            result=result+" "+convertUpper(arr);
+            result=result+""+convertUpper(arr)+" ";
         }
         return result;
     }
